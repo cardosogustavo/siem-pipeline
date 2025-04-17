@@ -1,0 +1,3 @@
+{"timestamp": "2025-04-15T15:17:08.855096Z", "user": "bob", "ip_address": "172.28.167.225", "event_type": "file_download", "status": "success", "location": "West Christina", "device": "macOS", "file_accessed": "once.gif", "anomalous": false}
+{"timestamp": "2025-04-15T15:17:09.855807Z", "user": "carol", "ip_address": "172.17.220.117", "event_type": "logout", "status": "success", "location": "South Aaronville", "device": "Ubuntu", "file_accessed": null, "anomalous": false}
+{"timestamp": "2025-04-15T15:17:10.856452Z", "user": "alice", "ip_address": "172.19.111.168", "event_type": "file_upload", "status": "success", "location": "Walshbury", "device": "Ubuntu", "file_accessed": "imagine.tiff", "anomalous": false}
