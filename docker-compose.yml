@@ -78,13 +78,11 @@ services:
 
   sqlite_loader:
     build:
-      context: .
-      dockerfile: /sqlite_loader/Dockerfile
+      context: ./sqlite_loader
     container_name: sqlite_loader
     depends_on:
       - spark-submit
-      - kafka_producer
     volumes:
-      - ./spark_streaming/output:/app/parquet_data
-      - ./sqlite_loader/data:/app/sqlite_data
+      - ./spark_streaming/output/parquet:/app/output/parquet
+      - ./sqlite_loader:/app
     command: python3 parquet_to_sqlite.py
